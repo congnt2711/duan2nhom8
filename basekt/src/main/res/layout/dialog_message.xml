@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        android:background="@color/colorTransparent"
+        app:cardCornerRadius="@dimen/size_1x">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_2x"
+                android:layout_marginTop="@dimen/size_3_5x"
+                android:layout_marginBottom="@dimen/size_4_5x"
+                android:layout_marginStart="@dimen/size_3x"/>
+        <Button
+                android:id="@+id/btnNegative"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/txtMessage"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_negative"
+                android:textColor="@color/colorAccent"
+                android:layout_toStartOf="@id/btnPositive"
+                android:layout_marginBottom="@dimen/size_1x"
+                android:layout_marginEnd="@dimen/size_1_5x"
+                android:elevation="0dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:backgroundTint="@color/colorTransparent"/>
+        <Button
+                android:id="@+id/btnPositive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_positive"
+                android:layout_below="@id/txtMessage"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/size_1x"
+                android:layout_marginEnd="@dimen/size_1_5x"
+                android:elevation="0dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:backgroundTint="@color/colorTransparent"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

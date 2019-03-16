@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/customImgcity"
+            android:layout_width="@dimen/size_12x"
+            android:layout_height="@dimen/size_12x"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_margin="@dimen/margin_1x"/>
+    <TextView
+            android:id="@+id/customTxtcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hanoi"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_3x"
+            android:layout_toRightOf="@+id/customImgcity"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_1x"/>
+    <ImageView
+            android:layout_width="@dimen/size_5x"
+            android:layout_height="@dimen/size_5x"
+            android:src="@drawable/ic_search_white"
+            android:tint="@color/colorWhite"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_1x"/>
+
+</RelativeLayout>

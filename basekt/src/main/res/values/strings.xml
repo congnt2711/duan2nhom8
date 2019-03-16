@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="dialog_positive">Đồng ý</string>
+    <string name="dialog_negative">Từ chối</string>
+    <string name="dialog_choose">Chọn</string>
+    <string name="dialog_cancel">Hủy</string>
+    <string name="callback_message">Vui lòng thử lại sau</string>
+    <string name="callback_positive">Đồng ý</string>
+
+</resources>

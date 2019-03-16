@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+            android:id="@+id/fmlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/bg_main"
+                android:scaleType="centerCrop"
+                android:layout_height="@dimen/size_25x"/>
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/tbMain"
+                app:titleTextColor="@color/colorWhite"
+                app:subtitleTextColor="@color/colorGray"
+                android:background="@color/colorTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStart="@dimen/size_0x">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <ImageButton
+                        android:id="@+id/btnMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu"
+                        android:tint="@color/colorWhite"
+                        android:foreground="@drawable/bg_button_ripple"
+                        android:background="@color/colorTransparent"
+                        android:padding="@dimen/size_2x"/>
+                <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/text_2_5x"
+                        android:textColor="@color/colorWhite"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </FrameLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cirimgCity"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="@dimen/size_14x"
+            android:layout_height="@dimen/size_14x"
+            android:layout_below="@+id/fmlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-55dp"/>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/vpHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cirimgCity"/>
+
+
+</RelativeLayout>
