@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/aaa"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_7x">
     <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/customImgcity"
-            android:layout_width="@dimen/size_12x"
-            android:layout_height="@dimen/size_12x"
+            android:layout_width="@dimen/size_5x"
+            android:layout_height="@dimen/size_5x"
             android:src="@drawable/ic_launcher_background"
-            android:layout_margin="@dimen/margin_1x"/>
+            android:layout_marginLeft="@dimen/size_2x"
+            android:layout_marginTop="@dimen/size_1x"
+            android:layout_marginBottom="@dimen/size_1x"/>
     <TextView
             android:id="@+id/customTxtcity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hanoi"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorBlack"
             android:textStyle="bold"
-            android:textSize="@dimen/text_3x"
+            android:textSize="@dimen/text_2x"
             android:layout_toRightOf="@+id/customImgcity"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/margin_1x"/>
+            android:layout_marginLeft="@dimen/size_2x"/>
     <ImageView
-            android:layout_width="@dimen/size_5x"
-            android:layout_height="@dimen/size_5x"
+            android:layout_width="@dimen/size_3x"
+            android:layout_height="@dimen/size_3x"
             android:src="@drawable/ic_search_white"
-            android:tint="@color/colorWhite"
+            android:tint="@color/colorBlack"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/margin_1x"/>
+            android:layout_marginRight="@dimen/size_2x"/>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/customImgcity"
+            android:layout_marginStart="16dp"/>
 
 </RelativeLayout>
