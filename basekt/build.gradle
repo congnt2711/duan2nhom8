@@ -39,6 +39,7 @@ dependencies {
     api 'com.squareup.retrofit2:converter-gson:2.4.0'
     api 'com.facebook.android:facebook-login:4.39.0'
     api 'de.hdodenhof:circleimageview:2.2.0'
+
 }
 repositories {
     mavenCentral()

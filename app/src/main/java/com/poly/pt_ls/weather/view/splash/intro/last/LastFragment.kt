@@ -15,7 +15,7 @@ class LastFragment:BaseFragment<LastContract.View,LastContract.Presenter>(),Last
 
     override fun layout()= R.layout.fragment_last
     override fun view(savedInstanceState: Bundle?) {
-        txtNext.setOnClickListener{
+        txtDone.setOnClickListener{
             activity?.startFragment(HomeFragment(), true)
         }
     }

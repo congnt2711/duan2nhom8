@@ -16,6 +16,6 @@ class IntroFragment : BaseFragment<IntroContract.View, IntroContract.Presenter>(
     }
 
     override fun displayListPager(list: List<Fragment>) {
-        vpIntro.adapter= IntroPagerAdapter(activity!!.supportFragmentManager, list)
+        vpIntro.adapter= IntroPagerAdapter(childFragmentManager, list)
     }
 }

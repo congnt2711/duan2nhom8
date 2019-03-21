@@ -9,10 +9,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <ImageView
+                android:id="@+id/imgTinhthanh"
                 android:layout_width="match_parent"
-                android:src="@drawable/bg_main"
+                android:src="@drawable/hanoi"
+                android:alpha="0.5"
                 android:scaleType="centerCrop"
                 android:layout_height="@dimen/size_25x"/>
+        <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_25x"
+                android:background="@color/colorBlack"
+                android:alpha="0.8"/>
+        <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_25x"
+                android:src="@drawable/blur"/>
         <android.support.v7.widget.Toolbar
                 android:id="@+id/tbMain"
                 app:titleTextColor="@color/colorWhite"
@@ -47,7 +60,7 @@
     </FrameLayout>
     <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/cirimgCity"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/hanoi"
             android:layout_width="@dimen/size_14x"
             android:layout_height="@dimen/size_14x"
             android:layout_below="@+id/fmlayout"
