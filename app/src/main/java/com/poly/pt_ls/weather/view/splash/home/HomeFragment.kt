@@ -25,7 +25,7 @@ class HomeFragment : BaseFragment<HomeContract.View, HomeContract.Presenter>(), 
     }
 
     override fun displayListPager(list: List<Fragment>) {
-        adapter = HomePagerAdapter(activity!!.supportFragmentManager, list)
+        adapter = HomePagerAdapter(childFragmentManager, list)
         vpHome.adapter = adapter
     }
 

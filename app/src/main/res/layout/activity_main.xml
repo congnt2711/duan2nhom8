@@ -5,13 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".view.MainActivity">
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/bg_main"
-            android:scaleType="centerCrop"
-            android:alpha="0.8"
-            tools:ignore="ContentDescription"/>
+
 
     <FrameLayout android:layout_width="match_parent"
                  android:layout_height="match_parent"
