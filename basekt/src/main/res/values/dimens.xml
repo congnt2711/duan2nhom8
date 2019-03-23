@@ -16,6 +16,7 @@
     <dimen name="size_5x">40dp</dimen>
     <dimen name="size_5_5x">44dp</dimen>
     <dimen name="size_6x">48dp</dimen>
+    <dimen name="size_6_2_5x">50dp</dimen>
     <dimen name="size_6_5x">52dp</dimen>
     <dimen name="size_7x">56dp</dimen>
     <dimen name="size_7_5x">60dp</dimen>
@@ -53,6 +54,7 @@
     <dimen name="text_5x">40sp</dimen>
     <dimen name="text_5_5x">44sp</dimen>
     <dimen name="text_6x">48sp</dimen>
+    <dimen name="text_6_2_5x">50sp</dimen>
     <dimen name="text_6_5x">52sp</dimen>
     <dimen name="text_7x">56sp</dimen>
     <dimen name="text_7_5x">60sp</dimen>
@@ -62,6 +64,7 @@
     <dimen name="text_9_5x">76sp</dimen>
     <dimen name="text_10x">80sp</dimen>
     <dimen name="text_10_5x">84sp</dimen>
+    <dimen name="text_11_5x">88sp</dimen>
 
     <dimen name="margin_0_1x">1dp</dimen>
     <dimen name="margin_1x">10dp</dimen>

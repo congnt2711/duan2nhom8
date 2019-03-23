@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginLeft="@dimen/size_1x"
+        android:layout_marginRight="@dimen/size_1x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/txtLvTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21°C"
+            android:textSize="@dimen/text_1_5x"
+            android:textColor="@color/colorBlack"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lv_time"
+            android:layout_marginTop="@dimen/size_1x"
+            android:layout_marginBottom="@dimen/size_1x"/>
+    <TextView
+            android:id="@+id/txtLvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 AM"
+            android:textSize="@dimen/text_1_5x"
+            android:textColor="@color/colorBlack"/>
+</LinearLayout>
