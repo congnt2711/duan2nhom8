@@ -6,6 +6,7 @@ import android.view.View
 import com.englandstudio.basekt.BaseFragment
 import com.englandstudio.basekt.library.getStatusBarHeight
 import com.poly.pt_ls.weather.R
+import com.poly.pt_ls.weather.model.Forecast
 import com.poly.pt_ls.weather.util.startFragment
 import com.poly.pt_ls.weather.view.splash.home.listcity.ListCityFragment
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -21,7 +22,11 @@ class HomeFragment : BaseFragment<HomeContract.View, HomeContract.Presenter>(), 
         tbMain.setPadding(0, activity!!.getStatusBarHeight(), 0, 0)
         btnMenu.setOnClickListener(this)
 
-        presenter.loadDataPager()
+        presenter.loadData()
+    }
+
+    override fun displayData(data: Forecast?) {
+        presenter.loadDataPager(data)
     }
 
     override fun displayListPager(list: List<Fragment>) {
@@ -33,11 +38,6 @@ class HomeFragment : BaseFragment<HomeContract.View, HomeContract.Presenter>(), 
         when (v.id) {
             R.id.btnMenu -> activity?.startFragment(ListCityFragment(), true)
         }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        adapter.notifyDataSetChanged()
     }
 
 }

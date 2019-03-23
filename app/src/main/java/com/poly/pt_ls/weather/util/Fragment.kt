@@ -12,7 +12,6 @@ fun Activity.startFragment(fragment: Fragment, leftToRight: Boolean?) {
         else ft.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left)
     }
     ft.replace(R.id.rootView, fragment, null)
-    ft.addToBackStack(null)
     ft.commit()
 }
 
