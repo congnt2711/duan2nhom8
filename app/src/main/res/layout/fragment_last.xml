@@ -34,16 +34,7 @@
             android:layout_below="@+id/imgicl"
             android:layout_marginTop="130dp"/>
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bỏ qua"
-            android:textSize="18sp"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/size_2x"
-            android:layout_marginLeft="@dimen/size_4_5x"/>
+
     <TextView
             android:id="@+id/txtDone"
             android:layout_width="wrap_content"

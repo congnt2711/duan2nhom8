@@ -32,6 +32,7 @@
             android:layout_below="@+id/imgicf"
             android:layout_marginTop="130dp"/>
     <TextView
+            android:id="@+id/txtSkipF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bỏ qua"
@@ -42,6 +43,7 @@
             android:layout_marginBottom="@dimen/size_2x"
             android:layout_marginLeft="@dimen/size_4_5x"/>
     <TextView
+            android:id="@+id/txtTiepF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tiếp"

@@ -14,8 +14,8 @@
             android:textColor="@color/colorBlack"/>
     <ImageView
             android:id="@+id/imgHomeWeather"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
             android:src="@drawable/ic_logo_weather_home"
             android:layout_below="@+id/txtHomeWeather"
             android:layout_centerHorizontal="true"
@@ -54,9 +54,9 @@
             android:layout_marginStart="16dp">
         <ImageView
                 android:id="@+id/imgHomeLM"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_doam"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_sealv"/>
         <TextView
                 android:id="@+id/txtHomeLM"
                 android:layout_width="wrap_content"
@@ -75,8 +75,8 @@
             android:layout_centerHorizontal="true">
         <ImageView
                 android:id="@+id/imgHomeDA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:src="@drawable/ic_doam"/>
         <TextView
                 android:id="@+id/txtHomeDA"
@@ -98,9 +98,9 @@
             android:layout_marginEnd="16dp">
         <ImageView
                 android:id="@+id/imgHomeG"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_doam"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_wind"/>
         <TextView
                 android:id="@+id/txtHomeG"
                 android:layout_width="wrap_content"

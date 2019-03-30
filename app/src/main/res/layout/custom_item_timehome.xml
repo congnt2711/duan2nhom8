@@ -7,6 +7,28 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/txtLvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30/03"
+            android:textSize="@dimen/text_1_5x"
+            android:textColor="@color/colorBlack"/>
+    <TextView
+            android:id="@+id/txtLvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 AM"
+            android:textSize="@dimen/text_1_5x"
+            android:textColor="@color/colorBlack"/>
+    <ImageView
+            android:id="@+id/imgImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_lv_time"
+            android:layout_marginTop="@dimen/size_1x"
+            android:layout_marginBottom="@dimen/size_1x"/>
     <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,18 +48,4 @@
                 android:textSize="@dimen/text_1_5x"
                 android:textColor="@color/colorBlack"/>
     </LinearLayout>
-
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_lv_time"
-            android:layout_marginTop="@dimen/size_1x"
-            android:layout_marginBottom="@dimen/size_1x"/>
-    <TextView
-            android:id="@+id/txtLvTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="7 AM"
-            android:textSize="@dimen/text_1_5x"
-            android:textColor="@color/colorBlack"/>
 </LinearLayout>

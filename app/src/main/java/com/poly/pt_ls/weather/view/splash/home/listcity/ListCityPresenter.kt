@@ -3,74 +3,11 @@ package com.poly.pt_ls.weather.view.splash.home.listcity
 import com.englandstudio.basekt.BasePresenter
 import com.poly.pt_ls.weather.R
 import com.poly.pt_ls.weather.model.City
+import com.poly.pt_ls.weather.util.getListCity
 
 class ListCityPresenter(view:ListCityContract.View): BasePresenter<ListCityContract.View>(view),ListCityContract.Presenter {
     override fun loadCity() {
-        val arrLC = listOf(
-            City("An Giang", R.drawable.bg_main, 0.0, 0.0),
-            City("Bà Rịa-Vũng Tàu", R.drawable.bg_main, 0.0, 0.0),
-            City("Bạc Liêu", R.drawable.bg_main, 0.0, 0.0),
-            City("Bắc Kạn", R.drawable.bg_main, 0.0, 0.0),
-            City("Bắc Giang", R.drawable.bg_main, 0.0, 0.0),
-            City("Bắc Ninh", R.drawable.bg_main, 0.0, 0.0),
-            City("Bến Tre", R.drawable.bg_main, 0.0, 0.0),
-            City("Bình Dương", R.drawable.bg_main, 0.0, 0.0),
-            City("Bình Định", R.drawable.bg_main, 0.0, 0.0),
-            City("Bình Phước", R.drawable.bg_main, 0.0, 0.0),
-            City("Bình Thuận", R.drawable.bg_main, 0.0, 0.0),
-            City("Cà Mau", R.drawable.bg_main, 0.0, 0.0),
-            City("Cao Bằng", R.drawable.bg_main, 0.0, 0.0),
-            City("Cần Thơ", R.drawable.bg_main, 0.0, 0.0),
-            City("Đà Nẵng", R.drawable.bg_main, 0.0, 0.0),
-            City("Đắk Lắk", R.drawable.bg_main, 0.0, 0.0),
-            City("Đắk Nông", R.drawable.bg_main, 0.0, 0.0),
-            City("Điện Biên", R.drawable.bg_main, 0.0, 0.0),
-            City("Đồng Nai", R.drawable.bg_main, 0.0, 0.0),
-            City("Đồng Tháp", R.drawable.bg_main, 0.0, 0.0),
-            City("Gia Lai", R.drawable.bg_main, 0.0, 0.0),
-            City("Hà Giang", R.drawable.bg_main, 0.0, 0.0),
-            City("Hà Nam", R.drawable.bg_main, 0.0, 0.0),
-            City("Hà Nội", R.drawable.bg_main, 0.0, 0.0),
-            City("Hà Tĩnh", R.drawable.bg_main, 0.0, 0.0),
-            City("Hải Dương", R.drawable.bg_main, 0.0, 0.0),
-            City("Hải Phòng", R.drawable.bg_main, 0.0, 0.0),
-            City("Hòa Bình", R.drawable.bg_main, 0.0, 0.0),
-            City("Hồ Chí Minh", R.drawable.bg_main, 0.0, 0.0),
-            City("Hậu Giang", R.drawable.bg_main, 0.0, 0.0),
-            City("Hưng Yên", R.drawable.bg_main, 0.0, 0.0),
-            City("Khánh Hòa", R.drawable.bg_main, 0.0, 0.0),
-            City("Kiên Giang", R.drawable.bg_main, 0.0, 0.0),
-            City("Kon Tum", R.drawable.bg_main, 0.0, 0.0),
-            City("Lai Châu", R.drawable.bg_main, 0.0, 0.0),
-            City("Lào Cai", R.drawable.bg_main, 0.0, 0.0),
-            City("Lạng Sơn", R.drawable.bg_main, 0.0, 0.0),
-            City("Lâm Đồng", R.drawable.bg_main, 0.0, 0.0),
-            City("Long An", R.drawable.bg_main, 0.0, 0.0),
-            City("Nam Định", R.drawable.bg_main, 0.0, 0.0),
-            City("Nghệ An", R.drawable.bg_main, 0.0, 0.0),
-            City("Ninh Bình", R.drawable.bg_main, 0.0, 0.0),
-            City("Ninh Thuận", R.drawable.bg_main, 0.0, 0.0),
-            City("Phú Thọ", R.drawable.bg_main, 0.0, 0.0),
-            City("Phú Yên", R.drawable.bg_main, 0.0, 0.0),
-            City("Quảng Bình", R.drawable.bg_main, 0.0, 0.0),
-            City("Quảng Nam", R.drawable.bg_main, 0.0, 0.0),
-            City("Quảng Ngãi", R.drawable.bg_main, 0.0, 0.0),
-            City("Quảng Ninh", R.drawable.bg_main, 0.0, 0.0),
-            City("Quảng Trị", R.drawable.bg_main, 0.0, 0.0),
-            City("Sóc Trăng", R.drawable.bg_main, 0.0, 0.0),
-            City("Sơn La", R.drawable.bg_main, 0.0, 0.0),
-            City("Tây Ninh", R.drawable.bg_main, 0.0, 0.0),
-            City("Thái Bình", R.drawable.bg_main, 0.0, 0.0),
-            City("Thái Nguyên", R.drawable.bg_main, 0.0, 0.0),
-            City("Thanh Hóa", R.drawable.bg_main, 0.0, 0.0),
-            City("Thừa Thiên - Huế", R.drawable.bg_main, 0.0, 0.0),
-            City("Tiền Giang", R.drawable.bg_main, 0.0, 0.0),
-            City("Trà Vinh", R.drawable.bg_main, 0.0, 0.0),
-            City("Tuyên Quang", R.drawable.bg_main, 0.0, 0.0),
-            City("Vĩnh Long", R.drawable.bg_main, 0.0, 0.0),
-            City("Vĩnh Phúc", R.drawable.bg_main, 0.0, 0.0),
-            City("Yên Bái", R.drawable.bg_main, 0.0, 0.0)
-        )
+        val arrLC = getListCity()
         view.displayCity(arrLC)
     }
 }

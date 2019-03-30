@@ -5,7 +5,13 @@ import com.poly.pt_ls.weather.model.Forecast
 
 interface TimeContract {
     interface View: BaseContract.View {
-        fun displayData(list: List<Forecast.ListWeather>?)
+        fun displayData(
+            list: List<Forecast.ListWeather>?,
+            timeDay: String,
+            timeTime: String,
+            timeWeather: String,
+            image: Int
+        )
     }
 
     interface Presenter: BaseContract.Presenter<View> {

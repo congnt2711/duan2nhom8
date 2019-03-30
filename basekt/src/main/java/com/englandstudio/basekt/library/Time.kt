@@ -50,9 +50,17 @@ fun getDateTimeFromCalendar(calendar: Calendar): String {
 
 @SuppressLint("SimpleDateFormat")
 fun getDateFromTimeStamp(time: Long): String {
-    val formatter = SimpleDateFormat("dd/MM/yyyy")
+    val formatter = SimpleDateFormat("'Ngày' dd 'tháng' MM 'năm' yyyy")
     val calendar = Calendar.getInstance()
-    calendar.timeInMillis = time
+    calendar.timeInMillis = time * 1000
+    return formatter.format(calendar.time)
+}
+
+@SuppressLint("SimpleDateFormat")
+fun getSDateFromTimeStamp(time: Long): String {
+    val formatter = SimpleDateFormat("dd/MM")
+    val calendar = Calendar.getInstance()
+    calendar.timeInMillis = time * 1000
     return formatter.format(calendar.time)
 }
 
