@@ -69,6 +69,7 @@ fun getTimeFromTimeStamp(time: Long): String {
     val formatter = SimpleDateFormat("HH:mm")
     val calendar = Calendar.getInstance()
     calendar.timeInMillis = time * 1000
+    calendar.set(Calendar.HOUR, (calendar.get(Calendar.HOUR) - 1))
     return formatter.format(calendar.time)
 }
 

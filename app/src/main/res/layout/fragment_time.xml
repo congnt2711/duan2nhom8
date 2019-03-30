@@ -44,6 +44,16 @@
             android:layout_marginTop="32dp"
             android:layout_marginRight="@dimen/size_2_5x"
             android:layout_alignParentTop="true"/>
+    <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_marginTop="@dimen/size_2x"
+            android:layout_marginBottom="@dimen/size_2x"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginRight="-16dp"
+            android:layout_below="@+id/txtTimeWeather"
+            android:layout_above="@+id/lvTimeHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     <android.support.v7.widget.RecyclerView
             android:id="@+id/lvTimeHome"
             android:layout_width="match_parent"

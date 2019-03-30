@@ -22,6 +22,10 @@ android {
     }
 }
 
+repositories {
+    maven { url 'https://jitpack.io' }
+}
 dependencies {
     implementation project(path: ':basekt')
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
