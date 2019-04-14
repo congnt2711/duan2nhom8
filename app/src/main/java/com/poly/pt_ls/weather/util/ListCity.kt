@@ -3,6 +3,8 @@ package com.poly.pt_ls.weather.util
 import com.poly.pt_ls.weather.R
 import com.poly.pt_ls.weather.model.City
 
+const val DEFAULT_VALUE = 23
+
 fun getListCity() = listOf(
     City("An Giang", R.drawable.angiang, 10.571638,104.6149443),
     City("Bà Rịa-Vũng Tàu", R.drawable.baria,9.7181719,106.499078 ),

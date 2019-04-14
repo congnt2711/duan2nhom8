@@ -12,6 +12,7 @@ import com.englandstudio.basekt.library.load
 import com.englandstudio.basekt.local.DataPreference
 import com.poly.pt_ls.weather.R
 import com.poly.pt_ls.weather.model.City
+import com.poly.pt_ls.weather.util.DEFAULT_VALUE
 import kotlinx.android.synthetic.main.custom_item_listcity.view.*
 
 class ListCityAdapter(context: Context, var list: List<City>, callback: OnCallBack<City>, var check: OnCheckCallback) :
@@ -22,7 +23,7 @@ class ListCityAdapter(context: Context, var list: List<City>, callback: OnCallBa
         vh.itemView.customTxtcity.text = list[pos].name
         vh.itemView.customImgcity.load(list[pos].image)
         vh.itemView.startAnimation(AnimationUtils.loadAnimation(context, R.anim.zoom))
-        if (pos == DataPreference.mPreferences.getInt("id", 23)) {
+        if (pos == DataPreference.mPreferences.getInt("id", DEFAULT_VALUE)) {
             vh.itemView.btnCheck.visibility = VISIBLE
             check.checkCallback(vh.itemView.btnCheck)
         } else vh.itemView.btnCheck.visibility = INVISIBLE

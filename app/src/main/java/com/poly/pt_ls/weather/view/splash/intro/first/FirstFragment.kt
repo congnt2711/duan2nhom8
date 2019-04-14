@@ -4,6 +4,7 @@ import android.os.Bundle
 import com.englandstudio.basekt.BaseFragment
 import com.englandstudio.basekt.local.DataPreference
 import com.poly.pt_ls.weather.R
+import com.poly.pt_ls.weather.util.DEFAULT_VALUE
 import com.poly.pt_ls.weather.util.getListCity
 import com.poly.pt_ls.weather.util.startFragment
 import com.poly.pt_ls.weather.view.splash.home.HomeFragment
@@ -17,7 +18,7 @@ class FirstFragment:BaseFragment<FirstContract.View,FirstContract.Presenter>(),F
 
 
     override fun view(savedInstanceState: Bundle?) {
-        val id = DataPreference.mPreferences.getInt("id", 23)
+        val id = DataPreference.mPreferences.getInt("id", DEFAULT_VALUE)
         txtSkipF.setOnClickListener{
             activity?.startFragment(HomeFragment(getListCity()[id]), true)
         }
