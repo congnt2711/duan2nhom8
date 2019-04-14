@@ -9,7 +9,7 @@ import com.poly.pt_ls.weather.model.City
 import com.poly.pt_ls.weather.model.Forecast
 import kotlinx.android.synthetic.main.fragment_weather.*
 
-@SuppressLint("ValidFragment")
+@SuppressLint("ValidFragment,SetTextI18n")
 class WeatherFragment @SuppressLint("ValidFragment") constructor(
     var data: Forecast,
     var city: City?
@@ -18,7 +18,6 @@ class WeatherFragment @SuppressLint("ValidFragment") constructor(
     override fun presenter() = WeatherPresenter(this)
     override fun layout() = R.layout.fragment_weather
 
-    @SuppressLint("SetTextI18n")
     override fun view(savedInstanceState: Bundle?) {
         presenter.loadData(city, data)
     }

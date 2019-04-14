@@ -24,12 +24,14 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/size_2x"/>
     <ImageView
+            android:id="@+id/btnCheck"
             android:layout_width="@dimen/size_3x"
             android:layout_height="@dimen/size_3x"
-            android:src="@drawable/ic_search_white"
-            android:tint="@color/colorBlack"
+            android:src="@drawable/tick"
+            android:tint="@color/colorPrimaryDark"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:visibility="invisible"
             android:layout_marginRight="@dimen/size_2x"/>
     <View
             android:layout_width="match_parent"
