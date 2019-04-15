@@ -33,6 +33,7 @@
             android:layout_centerVertical="true"
             android:visibility="invisible"
             android:layout_marginRight="@dimen/size_2x"/>
+
     <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
